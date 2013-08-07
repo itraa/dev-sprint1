@@ -1,3 +1,17 @@
+#1. A route is to bind the function to a URL
+#2. The route defined in the application is "/"
+#3. The method hello gets called when we hit that route 
+#4. The route would look like this:
+@app.route("/world")
+def world():
+    return "Hello, World"
+
+#5. It won't be executed, because the if __name__ == "__main__": expects it to be from the main() function. Once imported, it is no more from the main().
+    
 *** Cut and paste the for loop here ***
+			{% for message in messages %}
+{{message}}
+					{% endfor %}
 
 *** What is the for loop doing? ***
+The for loop goes through or loops through all the messages that need to be flashed(displayed on same page) one by one and displays the message.
